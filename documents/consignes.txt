@@ -1,0 +1,25 @@
+Cahier des charges
+
+Nous sommes une start-up, et nous lançons un site (dans un premier temps : nous lancerons l’application mobile dans un second temps), permettant de diffuser la musique vivante en dehors des structures traditionnelles.
+
+Nous mettons en relation des artistes qui souhaitent se produire, avec des particuliers ou des entreprises qui souhaitent organiser un concert privé.
+
+Le principe du site web est très simple :
+
+les musiciens peuvent créer un compte et se présenter, en donnant les informations suivantes : nom de scène, présentation du groupe et des membres (simple texte), description de la musique, type de musique, description de leur offre (type de lieu, durée du concert, etc.), région(s) (ou France entière), prix demandés. Nous souhaitons rester très ouverts et ne pas mettre les artistes et les musiques dans des cases, toutes ces informations sont donc des textes libres. Les différentes rubriques ne sont là que pour structurer la présentation
+
+les artistes et les concerts proposés sont publics
+
+les personnes qui souhaitent organiser un concert doivent également créer un compte, qui restera confidentiel (pour éviter qu’elles ne soient sollicitées), visible uniquement par les artistes qu’elles auront contacté. Les compte comprend leur nom, leur ville, la description du lieu proposé aux artistes
+
+les personnes qui souhaitent organiser un concert peuvent rechercher les concerts (recherche par type et ville), et contacter les artistes par le système de messagerie intégré au site
+
+les artistes et les organisateurs ont accès à leur messagerie (voir les conversations en cours, le nombre de nouveaux messages non lus, répondre à un message, archiver une conversation). Lorsqu’une conversation est ouverte, les nouveaux messages reçus doivent être actualisés automatiquement. Dans l’entête, on affichera aussi le nombre des messages non lus, en mettant à jour cette information automatiquement
+
+chacun (artistes et organisateurs) a la possibilité de modifier son profil. Il peut aussi préciser son adresse mail et demander de recevoir par mail les messages qui lui sont envoyés
+
+
+
+Nous souhaitons un mécanisme de notification pour la messagerie, qui affiche le nombre de nouveaux messages même pendant que l'on reste sur une page (et si possible, change l'icône ou le texte de l'onglet quand il y a des nouveaux messages).
+
+Nous attendons de vous que vous soyez force de proposition, pour réaliser une solution simple, robuste et efficace.

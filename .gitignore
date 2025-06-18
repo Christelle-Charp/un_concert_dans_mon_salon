@@ -1,0 +1,18 @@
+# Ignore les fichiers et dossiers de configuration
+.vscode/
+*.sublime*
+*.DS_Store
+
+# Ignore les fichiers contenant des accès ou config serveurs
+.vscode/sftp.json
+
+# Fichiers temporaires ou système
+*.log
+*.tmp
+*.bak
+
+# Fichiers générés automatiquement
+node_modules/
+vendor/
+dist/
+.env

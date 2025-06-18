@@ -1,0 +1,8 @@
+Artiste:
+- Pseudo: Greg  -mdp: Greg123
+- Pseudo: Emilie  -mdp: Emilie123
+- Pseudo: Eric  -mdp: Eric123
+
+Organisateur:
+-Pseudo: Nicolas  -mdp: Nicolas123
+-Pseudo: Sophie  -mdp: Sophie123
