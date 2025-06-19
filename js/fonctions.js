@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function demanderMessage(id_message) {
     // Rôle : demander au serveur le détail d'un message et tansmettre le retour à afficherMessage
     // Paramètres : 
-    //      id : id du message et de la conversation si pas de message
+    //      id_message : id du message et de la conversation si pas de message
     // Retour : néant
     let container = document.querySelector('.contenair[data-conversation-id]');
     let id_conversation = container ? container.getAttribute('data-conversation-id') : "";
@@ -79,7 +79,7 @@ function afficherMessage(fragment) {
 function demanderMessagesConversation(id_conversation) {
     // Rôle : demander au serveur le détail des messages d'une conversation toutes les 10 secondes et tansmettre le retour à afficherMessagesConversation
     // Paramètres : 
-    //      id : id de la conversation
+    //      id_conversation : id de la conversation
     // Retour : néant
 
     //Construire l'url à appeler (celle du controleur ajax)
@@ -104,14 +104,14 @@ function afficherMessagesConversation(fragment) {
     }
 }
 
-function demanderConversationsArchiveesOrga(id) {
+function demanderConversationsArchiveesOrga(id_utilisateur) {
     // Rôle : demander au serveur les conversations archivées d'un organisateur et tansmettre le retour à afficherConversationsOrga
     // Paramètres : 
-    //      id : id de l'utilisateur
+    //      id_utilisateur : id de l'utilisateur
     // Retour : néant
 
     //Construire l'url à appeler (celle du controleur ajax)
-    let url = "recuperer_conversations_archivees_orga_ajax.php?id=" + id;
+    let url = "recuperer_conversations_archivees_orga_ajax.php?id_utilisateur" + id_utilisateur;
     fetch(url)
         .then(function(response){
             return response.text();     //Le retour de la fonction est du text brut pour le HTML
@@ -119,14 +119,14 @@ function demanderConversationsArchiveesOrga(id) {
         .then(afficherConversationsOrga); 
 }
 
-function demanderConversationsEncoursOrga(id) {
+function demanderConversationsEncoursOrga(id_utilisateur) {
     // Rôle : demander au serveur les conversations en cours d'un organisateur et tansmettre le retour à afficherConversationsOrga
     // Paramètres : 
-    //      id : id de l'utilisateur
+    //      id_utilisateur : id de l'utilisateur
     // Retour : néant
 
     //Construire l'url à appeler (celle du controleur ajax)
-    let url = "recuperer_conversations_encours_orga_ajax.php?id=" + id;
+    let url = "recuperer_conversations_encours_orga_ajax.php?id_utilisateur=" + id_utilisateur;
     fetch(url)
         .then(function(response){
             return response.text();     //Le retour de la fonction est du text brut pour le HTML
@@ -147,7 +147,7 @@ function afficherConversationsOrga(fragment) {
 function demanderConversationsArchiveesArtiste(id_utilisateur) {
     // Rôle : demander au serveur les conversations archivées d'un artiste et tansmettre le retour à afficherConversationsArtiste
     // Paramètres : 
-    //      id : id de l'utilisateur
+    //      id_utilisateur : id de l'utilisateur
     // Retour : néant
 
     //Construire l'url à appeler pour le fragment liste_conversation_artiste
@@ -175,7 +175,7 @@ function demanderConversationsArchiveesArtiste(id_utilisateur) {
 function demanderConversationsEncoursArtiste(id_utilisateur) {
     // Rôle : demander au serveur les conversations en cours d'un artiste et tansmettre le retour à afficherConversationsArtiste
     // Paramètres : 
-    //      id : id de l'utilisateur
+    //      id_utilisateur : id de l'utilisateur
     // Retour : néant
 
     //Construire l'url à appeler pour le fragment liste_conversation_artiste
@@ -215,7 +215,7 @@ function afficherConversationsArtiste(idFragment, fragment) {
 function demanderMessagesNonLu() {
     // Rôle : demander au serveur les messages non lu de l'utilisateur connecté et tansmettre le retour à afficherMessagesNonLu
     // Paramètres : 
-    //      id : id de l'utilisateur
+    //      Néant
     // Retour : néant
 
     //Construire l'url à appeler (celle du controleur ajax)

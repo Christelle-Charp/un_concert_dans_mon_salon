@@ -42,21 +42,28 @@ if (! etatConnexion()) {
 }
 
 // Récupération des paramètrs : 
-if (! isset($_FILES['photo'])) {
+
+
+if (! isset($_FILES['photo']) || $_FILES['photo']['error'] == UPLOAD_ERR_NO_FILE ) {
     echo "Merci de selectionner votre photo";
+    include "templates/pages/form_photo.php";
     exit;
 }
 
+
+
+// Traitement :
 $fichier = $_FILES['photo'];
 $error = $fichier["error"];
 
-// Traitement :
 //Je vérifie la taille du fichier et si le chargement du fichier est ok
 if ($error == UPLOAD_ERR_INI_SIZE or $error == UPLOAD_ERR_FORM_SIZE) {
     echo "La photo fournie est trop lourde";
+    include "templates/pages/form_photo.php";
     exit;
 } else if ($error != UPLOAD_ERR_OK) {
     echo "Le chargement a échoué, veuillez ré-essayer ultérieurement";
+    include "templates/pages/form_photo.php";
     exit;
 }
 
