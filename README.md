@@ -23,18 +23,6 @@ L’objectif : permettre à des musiciens de se produire chez l’habitant ou da
 - PHP côté serveur
 
 
-🚀 Accès au site de test
-URL : cdms-chch.play.mywebecom.ovh
-Profils de démonstration :
-- 🎤 Artiste
-Pseudo : Greg
-Mot de passe : Greg123
-
-- 🏠 Organisateur
-Pseudo : Nicolas
-Mot de passe : Nicolas123
-
-
 📁 Documents disponibles
 - Les consignes de l'exercice - cahier des charges "client"
 - Schéma d’ergonomie
